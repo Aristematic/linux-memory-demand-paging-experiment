@@ -37,5 +37,33 @@ Watching the `pgfault` counter in `/proc/vmstat` shows page faults increasing in
 chmod +x build.sh
 ./build.sh
 
-## RUN
+Run
 ./memstress
+
+---
+
+## Observing Page Faults Section (Correct)
+
+```markdown
+## Observing Page Faults
+
+Run in another terminal while the program is executing:
+
+```bash
+watch -n1 "cat /proc/vmstat | grep pgfault"
+
+You will see the page fault counter increasing in real time as memory pages are accessed and allocated by the kernel.
+
+
+---
+
+## Key Concepts Section (Clean Version)
+
+```markdown
+## Key Concepts Demonstrated
+
+- Virtual Memory
+- Page Tables
+- Demand Paging
+- Page Fault Handling
+- Linux Kernel Memory Management
