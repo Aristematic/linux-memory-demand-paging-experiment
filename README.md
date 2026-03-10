@@ -36,3 +36,6 @@ Watching the `pgfault` counter in `/proc/vmstat` shows page faults increasing in
 ```bash
 chmod +x build.sh
 ./build.sh
+
+## RUN
+./memstress
